@@ -1,0 +1,425 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #17181a;
+  color: whitesmoke;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body.hide {
+  overflow: hidden;
+}
+
+main {
+  position: absolute;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+a,
+p,
+span,
+input,
+button,
+li {
+  font-size: 2.5rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.cursor {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-property: background, -webkit-transform;
+  transition-property: background, -webkit-transform;
+  transition-property: transform, background;
+  transition-property: transform, background, -webkit-transform;
+  -webkit-transform-origin: 75% 75%;
+          transform-origin: 75% 75%;
+}
+.cursor span {
+  color: #17181a;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.logo {
+  color: whitesmoke;
+  font-family: "Abril Fatface", cursive;
+  font-size: 3rem;
+}
+
+.nav-header {
+  padding: 1rem 5%;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.burger {
+  cursor: pointer;
+}
+.burger .line {
+  margin: 1rem 0;
+  padding: 0.2rem 2rem;
+  background: whitesmoke;
+  pointer-events: none;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10%;
+  background: whitesmoke;
+  color: #17181a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+  -webkit-clip-path: circle(2rem at 100% -40%);
+          clip-path: circle(2rem at 100% -40%);
+}
+
+.nav-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25rem;
+          flex: 1 1 25rem;
+}
+.nav-links a {
+  display: inline-block;
+  margin: 2rem 0;
+  color: #17181a;
+  font-size: 4rem;
+}
+
+.contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25rem;
+          flex: 1 1 25rem;
+}
+.contact p {
+  margin-top: 2rem;
+}
+
+.slide {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  padding: 4rem 0;
+  background: #17181a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.hero-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.hero-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-desc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero-desc p {
+  margin: 3rem 0;
+}
+
+.title {
+  position: relative;
+  overflow: hidden;
+}
+.title h2,
+.title span {
+  font-family: "Abril Fatface", cursive;
+  font-size: 5rem;
+}
+
+.mountain-span {
+  color: rgb(86, 124, 228);
+}
+
+.hike-span {
+  color: rgb(167, 110, 231);
+}
+
+.fashion-span {
+  color: rgb(255, 139, 93);
+}
+
+.title-swipe {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: darken;
+  pointer-events: none;
+}
+
+.t-swipe1 {
+  background: rgb(86, 124, 228);
+}
+
+.t-swipe2 {
+  background: rgb(167, 110, 231);
+}
+
+.t-swipe3 {
+  background: rgb(255, 139, 93);
+}
+
+.explore {
+  display: inline-block;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+}
+
+.reveal-img,
+.reveal-text {
+  background: #17181a;
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 150%;
+  height: 200%;
+}
+
+.nav-active {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  background: rgb(86, 124, 228);
+}
+
+.explore-active {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  background: whitesmoke;
+}
+
+.balloon {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 5rem;
+}
+
+.fashion1,
+.fashion2,
+.fashion3 {
+  min-height: 90vh;
+  width: 90%;
+  margin: 4rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.fashion-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+.fashion-text h2 {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2rem;
+}
+
+.fashion1 h2 {
+  color: rgb(255, 139, 93);
+}
+
+.fashion2 h2 {
+  color: rgb(86, 124, 228);
+}
+
+.fashion3 h2 {
+  color: rgb(167, 110, 231);
+}
+
+.fashion-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+}
+.fashion-img img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.fashion-nr {
+  position: absolute;
+  top: -5%;
+  left: -1%;
+  pointer-events: none;
+}
+.fashion-nr span {
+  font-size: 30rem;
+  opacity: 0.1;
+  mix-blend-mode: difference;
+}
+
+.swipe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.swipe1 {
+  background: rgb(167, 110, 231);
+  z-index: 6;
+}
+
+.swipe2 {
+  background: rgb(86, 124, 228);
+  z-index: 5;
+}
+
+.swipe3 {
+  background: rgb(255, 139, 93);
+  z-index: 4;
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 45%;
+  }
+  .slide {
+    gap: 2rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .cursor {
+    display: none;
+  }
+}

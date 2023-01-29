@@ -1,0 +1,56 @@
+.fashion1,
+.fashion2,
+.fashion3 {
+  min-height: 90vh;
+  width: 90%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.fashion-text {
+  flex: 1 1 30rem;
+  h2 {
+    font-size: $header1;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+  }
+}
+.fashion1 h2 {
+  color: rgb(255, 139, 93);
+}
+.fashion2 h2 {
+  color: rgb(86, 124, 228);
+}
+.fashion3 h2 {
+  color: rgb(167, 110, 231);
+}
+.fashion-img {
+  flex: 1 1 30rem;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+.fashion-nr {
+  position: absolute;
+  top: -5%;
+  left: -1%;
+  pointer-events: none;
+  span {
+    font-size: 30rem;
+    opacity: 0.1;
+    mix-blend-mode: difference;
+  }
+}

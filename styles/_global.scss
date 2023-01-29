@@ -1,0 +1,85 @@
+$header1: 5rem;
+$header2: 4rem;
+$header3: 3rem;
+$header4: 2.5rem;
+$header5: 2rem;
+$text: 2.5rem;
+$main-color: #17181a;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: $main-color;
+  color: whitesmoke;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body.hide {
+  overflow: hidden;
+}
+main {
+  position: absolute;
+}
+h1 {
+  font-size: $header1;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4 {
+  font-size: $header4;
+}
+h5 {
+  font-size: $header5;
+}
+a,
+p,
+span,
+input,
+button,
+li {
+  font-size: $text;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+ol,
+ul {
+  list-style: none;
+}
+.cursor {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  transition-property: transform, background;
+  transform-origin: 75% 75%;
+  span {
+    color: #17181a;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

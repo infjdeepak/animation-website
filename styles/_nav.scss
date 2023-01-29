@@ -1,0 +1,56 @@
+.logo {
+  color: whitesmoke;
+  font-family: "Abril Fatface", cursive;
+  font-size: $header3;
+}
+
+.nav-header {
+  padding: 1rem 5%;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.burger {
+  cursor: pointer;
+  .line {
+    margin: 1rem 0;
+    padding: 0.2rem 2rem;
+    background: whitesmoke;
+    pointer-events: none;
+  }
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10%;
+  background: whitesmoke;
+  color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  clip-path: circle(2rem at 100% -40%);
+}
+.nav-links {
+  flex: 1 1 25rem;
+
+  a {
+    display: inline-block;
+    margin: 2rem 0;
+    color: $main-color;
+    font-size: $header2;
+  }
+}
+.contact {
+  flex: 1 1 25rem;
+  p {
+    margin-top: 2rem;
+  }
+}
